@@ -6,17 +6,17 @@ const password2 = document.body.querySelector('.confirm');
 // function button(){
 submitButton.addEventListener('click', (e) => {
 	if (login.value.length > 10) {
-		login.classList.add('error');
-		const errorLogin = document.createElement('p');
-		errorLogin.textContent = 'Max length this field is 10'; //не рабоатет
-		login.append(errorLogin);
+		login.classList.add('error-border');
+		const errorLogin = document.body.querySelector('.loginerror');
+		errorLogin.textContent = 'Max length this field is 10';
 	}
 	if (password.value != password2.value) {
-        password.classList.add('error');
-        password2.classList.add('error');
-		alert('епрст, ну пароли же разные');
-		const errorPassword = document.createElement('p');
+		password.classList.add('error-border');
+		password2.classList.add('error-border');
+		const errorPassword = document.body.querySelector('.passworderror');
+		const errorPassword2 = document.body.querySelector('.password_error');
 		errorPassword.textContent = 'Must equal';
+		errorPassword2.textContent = 'Must equal';
 	}
 });
 // }

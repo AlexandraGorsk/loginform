@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -6,34 +6,61 @@
     font-family: sans-serif;
     font-weight: 400;
 }
+
 .title {
     margin-bottom: 20px;
 }
+
 .wrapper {
     width: 50%;
     background-color: darkblue;
     padding: 20px;
     margin: auto;
 }
+
 input {
     color: black;
     border-radius: 5px;
 }
-.loginfo > div {
+
+.loginfo>div {
     display: flex;
     flex-direction: row;
     gap: 10px;
+    justify-content: space-between;
 }
+
 .loginfo {
+    width: 50%;
     display: flex;
     gap: 10px;
     flex-direction: column;
     margin-bottom: 10px;
 }
+
 button {
-    padding:5px;
+    padding: 5px;
     color: black;
 }
-.error {
+
+.error-border {
     border-color: red;
+}
+
+.errorfield {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.errorfield>div {
+    height: 20px;
+    color: red;
+}
+
+
+.formwrapper {
+    display: flex;
+    gap: 20px;
 }
