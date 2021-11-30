@@ -10,6 +10,11 @@ submitButton.addEventListener('click', (e) => {
 		const errorLogin = document.body.querySelector('.loginerror');
 		errorLogin.textContent = 'Max length this field is 10';
 	}
+	if (!email.value.includes('@')) {
+		email.classList.add('error-border');
+		const errorEmail = document.body.querySelector('.emailerror');
+		errorEmail.textContent = 'Must be like username@hostname';
+	}
 	if (password.value != password2.value) {
 		password.classList.add('error-border');
 		password2.classList.add('error-border');

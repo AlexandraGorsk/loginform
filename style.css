@@ -41,6 +41,7 @@ input {
 button {
     padding: 5px;
     color: black;
+    width: 70px;
 }
 
 .error-border {
