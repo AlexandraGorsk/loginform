@@ -3,7 +3,7 @@ const login = document.body.querySelector('.login');
 const email = document.body.querySelector('.email');
 const password = document.body.querySelector('.password');
 const password2 = document.body.querySelector('.confirm');
-// function button(){
+
 submitButton.addEventListener('click', (e) => {
 	if (login.value.length > 10) {
 		login.classList.add('error-border');
@@ -19,5 +19,3 @@ submitButton.addEventListener('click', (e) => {
 		errorPassword2.textContent = 'Must equal';
 	}
 });
-// }
-// button()
